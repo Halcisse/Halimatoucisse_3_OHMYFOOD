@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,4 +7,54 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "Shrikhand", cursive;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*A CODER EN MOBILE FIRST*/
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.logo img {
+  width: 230px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #333131;
+}
+.footer-zonetexte {
+  padding: 25px 25px;
+}
+
+.footer-logo {
+  font-size: 21px;
+  margin-bottom: 15px;
+  color: white;
+}
+.footer-liens {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 13px;
+  font-size: 16px;
+  color: white;
+}
+.footer-icon {
+  margin-right: 13px;
+}
+.footer-mentions a {
+  font-size: 16px;
+  color: white;
 }
