@@ -30,7 +30,101 @@ header {
 .logo img {
   width: 230px;
 }
+/*MAIN*/
+h2 {
+  margin-left: 24px;
+}
 
+/*BLOC EXPLORER*/
+.explore-contener {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f6fa;
+  width: 100%;
+}
+
+/*BLOC FONCTIONNEMENT*/
+.fonctionnement-contener {
+  padding-bottom: 40px;
+}
+.btn-contener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f6fa;
+  width: 285px;
+  height: 80px;
+  margin-bottom: 19px;
+  border-radius: 28px;
+  font-weight: bold;
+}
+
+.btn-number {
+  background-color: #9356dc;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*BLOC RESTAURANT*/
+.restaurant-contener {
+  background-color: #f5f6fa;
+  padding: 30px 0;
+}
+
+.cards-contener {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 285px;
+  border-radius: 30px;
+  border: 1px solid white;
+  border-radius: 19px;
+  padding-bottom: 12px;
+  margin-bottom: 19px;
+  background-color: white;
+  overflow: hidden;
+}
+.image img {
+  height: 160px;
+  width: 100%;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+}
+.new {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: 22px;
+  background-color: #99e2d0;
+  border: 1px solid #99e2d0;
+  width: 85px;
+  height: 22px;
+  color: green;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 13px;
+}
+.plat {
+  font-weight: bold;
+}
 /*FOOTER*/
 footer {
   background-color: #333131;
@@ -40,7 +134,7 @@ footer {
 }
 
 .footer-logo {
-  font-size: 21px;
+  font-size: 23px;
   margin-bottom: 15px;
   color: white;
 }
@@ -48,13 +142,13 @@ footer {
   display: flex;
   flex-direction: row;
   margin-bottom: 13px;
-  font-size: 16px;
+  font-size: 19px;
   color: white;
 }
 .footer-icon {
   margin-right: 13px;
 }
 .footer-mentions a {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
 }
