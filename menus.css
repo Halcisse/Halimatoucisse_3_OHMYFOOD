@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-size: 27px;
+  font-family: "Shrikhand", cursive;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*Header et footer pour toutes les pages menus*/
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px 0;
+}
+.logo img {
+  width: 180px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #333131;
+}
+.footer-zonetexte {
+  padding: 25px 25px;
+}
+.footer-logo {
+  font-size: 23px;
+  font-family: "Shrikhand";
+  margin-bottom: 15px;
+  color: white;
+  margin-left: 0;
+}
+.footer-liens {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 13px;
+  font-size: 18px;
+  color: white;
+}
+.footer-icon {
+  margin-right: 13px;
+}
+.footer-mentions a {
+  font-size: 18px;
+  color: white;
+}
+
+/*BLOC MAIN*/
+
+/*L'image*/
+.contener img {
+  width: 100%;
+}
+.contener {
+  background-color: #f5f6fa;
+  padding-bottom: 35px;
+}
+/*Le bloc menu*/
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 17px;
+}
+.menu {
+  margin-bottom: 18px;
+}
+.menu_section a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  margin-left: 18px;
+}
+.menu-btn {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 21px;
+  width: 95%;
+  height: 58px;
+  margin-bottom: 17px;
+  /* padding: 8px; */
+}
+.btn_valider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 19%;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  padding-right: 10px;
+  color: white;
+  background-color: #99e2d0;
+  /* display: none; */
+}
+
+.menu-btntext {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 9px;
+}
+.menu-btn-price {
+  display: flex;
+  align-items: flex-end;
+}
+.commandez {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356dc;
+  border: 1px solid #9356dc;
+  border-radius: 25px;
+  box-shadow: 10px 8px 7px lightgrey;
+  width: 50%;
+  margin-left: 75px;
+  padding: 12px 0;
+}
+.commandez a {
+  color: white;
+}
