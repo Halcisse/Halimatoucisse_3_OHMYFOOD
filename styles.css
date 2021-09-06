@@ -19,7 +19,79 @@ a {
 }
 /*MOBILE FIRST*/
 
-/*LOADER*/
+/*LOADING*/
+/* spinner */
+.spinner {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 20%;
+  top: 50%;
+}
+.spinner div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 8px solid transparent;
+  border-top-color: #ad60f5;
+  border-radius: 50%;
+  animation: spinner1 1.2s linear infinite;
+}
+.spinner div:nth-child(2) {
+  border: 8px solid transparent;
+  border-bottom-color: #ad60f5;
+  animation: spinner2 1.2s linear infinite;
+}
+.spinloader {
+  background: rgba(10, 10, 10, 0.6);
+  animation: spinloader 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+}
+
+/*spin animations*/
+@keyframes spinner1 {
+  0% {
+    transform: rotate(0deg);
+    border-width: 10px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 1px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+@keyframes spinner2 {
+  0% {
+    transform: rotate(0deg);
+    border-width: 1px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 10px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 1px;
+  }
+}
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 
 /*HEADER*/
 
@@ -29,8 +101,9 @@ header {
   width: 100%;
   padding: 20px 0;
 }
-.logo img {
-  width: 180px;
+.logo {
+  font-family: "Shrikhand";
+  font-size: 35px;
 }
 /*MAIN*/
 h2 {
@@ -222,7 +295,7 @@ input {
 .coeur .heart-default:hover,
 .coeur:hover,
 .coeur .heart-gradient:hover {
-  transition: 0.5s 0s ease;
+  transition: 1s 0.7s ease;
 }
 
 /*FOOTER*/
@@ -284,7 +357,7 @@ footer {
   .titres {
     width: 50%;
   }
-  .logo img {
+  .logo {
     width: 290px;
   }
   input {
@@ -298,9 +371,6 @@ footer {
     /* background: linear-gradient(168deg, #ff79da 0%, #9356dc 80%); */
   }
 
-  input {
-    /* background: linear-gradient(168deg, #ff79da 0%, #9356dc 80%); */
-  }
   ::placeholder {
     color: black;
   }
