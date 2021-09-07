@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-size: 27px;
+  font-family: "Shrikhand", cursive;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*Header et footer pour toutes les pages menus*/
+
+/*HEADER*/
+header {
+  width: 100%;
+  padding-top: 20px;
+}
+.head-bande {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  margin: 0 40px;
+}
+.header-arrow a {
+  width: 22px;
+}
+.header-logo {
+  font-family: "Shrikhand";
+  font-size: 35px;
+}
+figure img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 242px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+figure {
+  margin: 0;
+}
+/*FOOTER*/
+footer {
+  background-color: #333131;
+}
+.footer-zonetexte {
+  padding: 25px 25px;
+}
+.footer-logo {
+  font-size: 23px;
+  font-family: "Shrikhand";
+  margin-bottom: 15px;
+  color: white;
+  margin-left: 0;
+}
+.footer-liens {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 13px;
+  font-size: 18px;
+  color: white;
+}
+.footer-icon {
+  margin-right: 13px;
+}
+.footer-mentions a {
+  font-size: 18px;
+  color: white;
+}
+
+/*BLOC MAIN*/
+
+/*Le bloc gris*/
+.bloc-menu {
+  background-color: #f6f6f6;
+  padding-bottom: 35px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-top: -50px;
+  z-index: 999;
+  position: relative;
+}
+
+/*Le titre + coeur*/
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 17px;
+}
+.coeur {
+  position: relative;
+  margin-top: 8px;
+}
+.coeur i {
+  color: #9d9d9d;
+  font-size: 24px;
+  left: 50%;
+}
+.coeur .heart-gradient {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+}
+.coeur .heart-gradient:hover {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 1;
+  z-index: 999;
+}
+.coeur:hover {
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 1;
+}
+.coeur .heart-default:hover {
+  opacity: 0;
+}
+.coeur .heart-default:hover,
+.coeur:hover,
+.coeur .heart-gradient:hover {
+  transition: 0.5s 0s ease;
+}
+
+/*Animation du menu*/
+@keyframes menu_animation {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* .menu_section {
+  animation: menu_animation 1800ms ease;
+} */
+.anim-btn1 {
+  animation: menu_animation 1600ms ease;
+}
+
+.anim-btn2 {
+  animation: menu_animation 2100ms ease;
+}
+
+.anim-btn3 {
+  animation: menu_animation 2800ms ease;
+}
+
+.menu {
+  margin-bottom: 18px;
+}
+.menu_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Le menu*/
+h3 {
+  margin-left: 18px;
+  opacity: 0.5;
+  border-bottom: 2px solid #99e2d0;
+  width: 40px;
+}
+h4 {
+  margin: 0;
+  padding: 8px 0 8px 8px;
+}
+p {
+  margin: 0;
+}
+.menu-btn {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 95%;
+  border-radius: 16px;
+  box-shadow: 3px 3px 10px #f7f4f4;
+}
+.menu-btn-titre {
+  width: 70%;
+}
+.menu-btn-sstitre {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px 8px 8px;
+}
+
+.btn_valider i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  /* display: none; */
+  overflow: hidden;
+  width: 18%;
+  transform: translateY(360deg);
+}
+
+.btn_valider i:hover {
+  background: #99e2d0;
+  transform: translateX(-100%);
+  transition: transform 600ms ease-in-out;
+}
+/*Le bouton*/
+.commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  box-shadow: 10px 8px 7px lightgrey;
+  width: 70%;
+  padding: 12px 0;
+  margin-left: 45px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.bloc-menu a {
+  color: white;
+}
+.bloc-menu a:hover {
+  transform: scale(1.05);
+}
+.btn-gradient {
+  background: linear-gradient(168deg, #ff79da 0%, #9356dc 80%);
+}
