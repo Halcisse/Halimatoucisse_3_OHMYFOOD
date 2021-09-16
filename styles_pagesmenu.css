@@ -147,9 +147,7 @@ footer {
     opacity: 1;
   }
 }
-/* .menu_section {
-  animation: menu_animation 1800ms ease;
-} */
+
 .anim-btn1 {
   animation: menu_animation 1600ms ease;
 }
@@ -208,26 +206,64 @@ p {
   align-items: center;
   padding: 0 8px 8px 8px;
 }
-
 .btn_valider i {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  padding: 24px 10px;
   position: absolute;
   right: 0;
   top: 0;
+}
+.menu-btn:hover .menu-btn-sstitre {
+  animation: checked ease 600ms;
+  transform-origin: LEFT;
+  animation-fill-mode: forwards;
+  min-width: 50px;
+}
+.btn-checked {
+  color: transparent;
+}
+.menu-btn:hover .btn-checked {
+  display: flex;
+  align-items: center;
+  background: #99e2d0;
   color: white;
-  /* display: none; */
-  overflow: hidden;
-  width: 18%;
-  transform: translateY(360deg);
+  font-size: 24px;
+  animation: valider ease 600ms 1;
 }
 
-.btn_valider i:hover {
-  background: #99e2d0;
-  transform: translateX(-100%);
-  transition: transform 600ms ease-in-out;
+/* Animation du bouton valider*/
+@keyframes checked {
+  0% {
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
 }
+@keyframes valider {
+  0% {
+    transform: rotate(-90deg);
+  }
+  20% {
+    transform: rotate(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotate(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotate(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+
 /*Le bouton*/
 .commander {
   display: flex;
@@ -250,4 +286,34 @@ p {
 }
 .btn-gradient {
   background: linear-gradient(168deg, #ff79da 0%, #9356dc 80%);
+}
+
+@media (min-width: 854px) {
+  .menu-btn {
+    width: 30%;
+  }
+
+  .menu_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer {
+    height: auto;
+  }
+  .footer-zonetexte {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-logo {
+    font-size: 43px;
+  }
+}
+
+@media (min-width: 1470px) {
+  .commander {
+    width: 30%;
+    margin-left: 695px;
+  }
 }
