@@ -281,6 +281,7 @@ input {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   opacity: 1;
   z-index: 999;
 }
