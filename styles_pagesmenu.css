@@ -118,6 +118,7 @@ footer {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   opacity: 1;
   z-index: 999;
 }
@@ -177,12 +178,14 @@ h3 {
   border-bottom: 2px solid #99e2d0;
   width: 40px;
 }
+.menu-btn-titre,
 h4,
 p {
   margin: 0;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 3px 0;
 }
 
 .menu-btn {
@@ -192,40 +195,47 @@ p {
   cursor: pointer;
   overflow: hidden;
   -webkit-box-align: center;
-  align-items: center;
   width: 95%;
-  border-radius: 16px;
+  border-radius: 11px;
   box-shadow: 3px 3px 10px #f7f4f4;
-  padding: 7px;
+  padding-left: 17px;
 }
 .menu-btn-titre {
   flex: 1;
 }
-/* .menu-btn-titre p {
-  text-overflow: ellipsis;
-} */
-.btn_valider i {
+
+.btn_valider {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
-.menu-btn:hover .menu-btn-sstitre {
-  animation: checked ease 600ms;
-  transform-origin: LEFT;
+.menu-btn:hover .btn_valider {
+  background: #99e2d0;
+  margin-left: 4px;
+  width: 17%;
+  height: 56px;
+  margin: 0 0 0 7px;
+  overflow: hidden;
+  animation: checked ease-in-out 800ms;
   animation-fill-mode: forwards;
-  min-width: 50px;
+}
+.menu-btn-price {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3px;
+}
+.menu-btn:hover .menu-btn-price {
+  animation: checked ease-in-out 800ms;
+  animation-fill-mode: forwards;
 }
 .btn-checked {
   color: transparent;
 }
 .menu-btn:hover .btn-checked {
-  display: flex;
-  align-items: center;
-  background: #99e2d0;
+  font-size: 20px;
   color: white;
-  font-size: 24px;
-  animation: valider ease 600ms 1;
+  animation: valider ease 800ms 1;
 }
 
 /* Animation du bouton valider*/
