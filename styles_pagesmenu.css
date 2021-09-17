@@ -29,8 +29,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 18px;
-  margin: 0 40px;
+  /* padding-bottom: 18px; */
+  margin: 0px 20px;
 }
 .header-arrow a {
   width: 22px;
@@ -59,7 +59,7 @@ footer {
   padding: 25px 25px;
 }
 .footer-logo {
-  font-size: 23px;
+  font-size: 29px;
   font-family: "Shrikhand";
   margin-bottom: 15px;
   color: white;
@@ -217,16 +217,17 @@ p {
   height: 56px;
   margin: 0 0 0 7px;
   overflow: hidden;
-  animation: checked ease-in-out 800ms;
+  animation: checked ease-in-out 500ms;
   animation-fill-mode: forwards;
 }
 .menu-btn-price {
   display: flex;
   align-items: flex-end;
   padding-bottom: 3px;
+  margin-left: 7px;
 }
 .menu-btn:hover .menu-btn-price {
-  animation: checked ease-in-out 800ms;
+  animation: checked ease-in-out 500ms;
   animation-fill-mode: forwards;
 }
 .btn-checked {
@@ -235,7 +236,7 @@ p {
 .menu-btn:hover .btn-checked {
   font-size: 20px;
   color: white;
-  animation: valider ease 800ms 1;
+  animation: valider ease 400ms 1;
 }
 
 /* Animation du bouton valider*/
@@ -251,20 +252,16 @@ p {
   0% {
     transform: rotate(-90deg);
   }
-  20% {
-    transform: rotate(-75deg) scale(1.03);
-  }
+
   40% {
-    transform: rotate(-60deg) scale(1.08);
+    transform: rotate(-60deg) scale(1.09);
   }
   60% {
-    transform: rotate(-45deg) scale(1.15);
+    transform: rotate(-45deg) scale(1.14);
   }
-  80% {
-    transform: rotate(-30deg) scale(1.08);
-  }
+
   100% {
-    transform: rotate(5deg) scale(1);
+    transform: rotate(20deg) scale(1);
   }
 }
 
@@ -276,7 +273,7 @@ p {
   border: 1px solid transparent;
   border-radius: 25px;
   box-shadow: 10px 8px 7px lightgrey;
-  width: 60%;
+  width: 50%;
   padding: 12px 0;
   margin: auto;
   transform: scale(1);
@@ -302,6 +299,10 @@ p {
     flex-direction: row;
     justify-content: space-around;
   }
+  .commander {
+    width: 30%;
+  }
+
   footer {
     height: auto;
   }
@@ -311,13 +312,13 @@ p {
     align-items: center;
   }
   .footer-logo {
-    font-size: 43px;
+    font-size: 47px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: 1470px) {
   .commander {
-    width: 30%;
-    margin-left: 695px;
+    width: 20%;
   }
 }
