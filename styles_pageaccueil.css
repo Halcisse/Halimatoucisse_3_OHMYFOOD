@@ -331,6 +331,9 @@ footer {
 /*RESPONSIVE*/
 
 @media (min-width: 355px) {
+  .spinner {
+    left: 28%;
+  }
   /*RESTAURATION*/
   .card {
     width: 80%;
@@ -339,6 +342,9 @@ footer {
 }
 
 @media (min-width: 854px) {
+  .spinner {
+    left: 40%;
+  }
   /*BLOC EXPLORER*/
   .logo {
     font-size: 46px;
