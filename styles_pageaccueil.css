@@ -175,7 +175,8 @@ input {
   justify-content: space-evenly;
   align-items: center;
   background-color: #f5f6fa;
-  width: 240px;
+  position: relative;
+  width: 80%;
   height: 60px;
   margin-bottom: 19px;
   border-radius: 24px;
@@ -195,7 +196,7 @@ input {
 
 .btn-number {
   position: absolute;
-  margin-right: 239px;
+  left: -13px;
   background-color: #9356dc;
   border-radius: 50%;
   height: 22px;
@@ -217,6 +218,7 @@ input {
   align-items: center;
 }
 .card {
+  position: relative;
   width: 285px;
   border-radius: 30px;
   border: 1px solid white;
@@ -235,8 +237,8 @@ input {
   object-fit: cover;
 }
 .new {
-  position: relative;
-  left: 10px;
+  position: absolute;
+  right: 10px;
   top: 10px;
   background-color: #99e2d0;
   border: 1px solid #99e2d0;
@@ -395,10 +397,7 @@ footer {
     border-radius: 45px;
   }
   .btn {
-    width: 283px;
-  }
-  .btn-number {
-    margin-right: 288px;
+    width: 30%;
   }
   .cards-contener {
     display: flex;
@@ -423,11 +422,6 @@ footer {
 }
 
 @media (min-width: 960px) {
-  .cards-contener {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
   .card {
     width: 40%;
   }
@@ -439,10 +433,9 @@ footer {
   .logo {
     font-size: 52px;
   }
-  .btn {
-    width: 370px;
-  }
-  .btn-number {
-    margin-right: 374px;
+  .cards-contener {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
